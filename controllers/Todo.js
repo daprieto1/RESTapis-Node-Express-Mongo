@@ -52,7 +52,7 @@ exports.createTodo = (req, res) => {
     }
     // todo is created
     // send the created todo as a json response
-    res.json({ task });
+    res.status(201).json({ task });
   });
 };
 

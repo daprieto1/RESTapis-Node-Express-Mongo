@@ -1,0 +1,40 @@
+mutation CreateTask {
+    insert_Tasks(objects: {task: "example", id: "9b201552-b308-4a7e-bb95-d10ede5ee71e"}) {
+        returning {
+            id
+        }
+    }
+}
+
+query GetAll {
+    Tasks {
+        id
+        task
+        createdAt
+        updatedAt
+    }
+}
+
+query GetOne {
+    Tasks {
+        id
+    }
+    Tasks_by_pk(id: "9b201552-b308-4a7e-bb95-d10ede5ee71e") {
+        id
+        createdAt
+        task
+        updatedAt
+    }
+}
+
+mutation UpdateOne {
+    update_Tasks_by_pk(pk_columns: {id: "9b201552-b308-4a7e-bb95-d10ede5ee71e"}, _set: {task: "This is crazy"}) {
+        task
+    }
+}
+
+mutation DeleteOne {
+    delete_Tasks_by_pk(id: "9b201552-b308-4a7e-bb95-d10ede5ee71e") {
+        id
+    }
+}

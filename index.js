@@ -13,7 +13,7 @@ const app = express();
 
 // DB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/todoapp", {
+  .connect("mongodb+srv://fedesoft2:12345678902@cluster0.vte0q.mongodb.net/todoapp?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -34,3 +34,5 @@ app.use("/api", todoRoutes);
 app.listen(port, () => {
   console.log(`Listening to http://localhost:${port}`);
 });
+
+

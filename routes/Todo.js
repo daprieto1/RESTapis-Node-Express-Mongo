@@ -17,19 +17,19 @@ const {
 router.param("todoId", getTodoById);
 
 // to get all the todos
-router.get("/todos/", getAllTodos);
+router.get("/tasks/", getAllTodos);
 
 // to get a single todo
-router.get("/todo/:todoId/", getTodo);
+router.get("/tasks/:todoId/", getTodo);
 
 // to create a todo
-router.post("/todo/create/", createTodo);
+router.post("/tasks/", createTodo);
 
 // to update the todo
-router.put("/todo/:todoId/update", updateTodo);
+router.put("/tasks/:todoId", updateTodo);
 
 // to delete the todo
-router.delete("/todo/:todoId/delete", deleteTodo);
+router.delete("/tasks/:todoId", deleteTodo);
 
 // we will export the router to import it in index.js
 module.exports = router;
