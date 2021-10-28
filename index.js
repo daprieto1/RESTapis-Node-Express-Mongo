@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 // we are using port 8000
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // we will create these todoRoutes in the future
 const todoRoutes = require("./routes/Todo");
@@ -23,7 +23,11 @@ mongoose
   });
 
 // middleware for cors to allow cross origin resource sharing
-app.use(cors());
+app.use(cors({credentials: true,
+    origin: true
+}));
+app.options('*', cors());
+
 // middleware to convert our request data into JSON format
 app.use(bodyParser.json());
 
@@ -32,7 +36,7 @@ app.use("/api", todoRoutes);
 
 // start the server in the port 8000
 app.listen(port, () => {
-  console.log(`Listening to http://localhost:${port}`);
+  console.log(`Listening to ${port}`);
 });
 
 
