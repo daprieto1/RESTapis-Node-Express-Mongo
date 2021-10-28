@@ -11,11 +11,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8000/api/tasks",
+					"raw": "https://todo-fedesoft.herokuapp.com/api/tasks",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"todo-fedesoft",
+						"herokuapp",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"tasks"
@@ -39,11 +41,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/api/tasks/",
+					"raw": "https://todo-fedesoft.herokuapp.com/api/tasks/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"todo-fedesoft",
+						"herokuapp",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"tasks",
@@ -59,15 +63,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8000/api/tasks/617acffeb11f30831c029690",
+					"raw": "https://todo-fedesoft.herokuapp.com/api/tasks/617adcae138b50002317614a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"todo-fedesoft",
+						"herokuapp",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"tasks",
-						"617acffeb11f30831c029690"
+						"617adcae138b50002317614a"
 					]
 				}
 			},
@@ -88,15 +94,17 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/api/tasks/617acffeb11f30831c029690",
+					"raw": "https://todo-fedesoft.herokuapp.com/api/tasks/617adcae138b50002317614a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"todo-fedesoft",
+						"herokuapp",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"tasks",
-						"617acffeb11f30831c029690"
+						"617adcae138b50002317614a"
 					]
 				}
 			},
@@ -108,15 +116,17 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8000/api/tasks/617acffeb11f30831c029690",
+					"raw": "https://todo-fedesoft.herokuapp.com/api/tasks/617adcae138b50002317614a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"todo-fedesoft",
+						"herokuapp",
+						"com"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"tasks",
-						"617acffeb11f30831c029690"
+						"617adcae138b50002317614a"
 					]
 				}
 			},
