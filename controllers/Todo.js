@@ -18,6 +18,7 @@ exports.getTodoById = (req, res, next, todoId) => {
 
 exports.getAllTodos = (req, res) => {
   // simply use .find() method and it will return all the todos
+  throw new Error('defecto')
   Todo.find()
     .sort("-createdAt")
     .exec((err, todos) => {

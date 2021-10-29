@@ -2,9 +2,9 @@
   "name": "todo_restapi",
   "version": "1.0.0",
   "description": "todo rest apis",
-  "main": "index.js",
+  "main": "../resume/images/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon ../resume/images/index.js",
     "test": "jest"
   },
   "author": "shubham",
