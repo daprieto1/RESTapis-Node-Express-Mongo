@@ -43,8 +43,6 @@ exports.createTodo = (req, res) => {
   // we will get json data from the frontend i.e. req.body
   const todo = new Todo(req.body);
 
-  throw Error('This is Xhristmas eRROR')
-
   // create a todo instance by passing 'task' field from 'req.body'
   todo.save((err, task) => {
     if (err || !task) {
